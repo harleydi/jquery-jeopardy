@@ -20,7 +20,7 @@ let score = 0
 let current = ''
 let currEl = ''
 
-// console.log(gi1)
+
 
 let readJeopardyData = async () => {
     let rawJeopardyData = await fetch('jeopardy.json')
@@ -70,7 +70,7 @@ function globalListener(event) {
 }
 
 
-let ones = gi1.forEach((item) => {
+gi1.forEach((item) => {
     item.addEventListener('click', globalListener, true)
 })
 
@@ -78,44 +78,18 @@ gi2.forEach((item) => {
     item.addEventListener('click', globalListener, true)
 })
 
-let fours = gi4.forEach((item) => {
+gi4.forEach((item) => {
     item.addEventListener('click', globalListener, true)
 })
 
-let sixes = gi6.forEach((item) => {
+gi6.forEach((item) => {
     item.addEventListener('click', globalListener, true)
 })
 
-let eights = gi8.forEach((item) => {
+gi8.forEach((item) => {
     item.addEventListener('click', globalListener, true)
 })
 
-// function activateEight(event) {
-//     let random = Math.floor(Math.random() * eightHundred[0].length)
-//     let data = eightHundred[0][random]
-//     current = data
-//     question.innerText = data.question
-//     currEl = event.target
-//     console.log(current)
-//     // console.log(event.target)
-//     let answer = element.answer
-//     console.log(answer);
-//     // event.target.removeEventListener('click' , activateEight, true)
-//     currEl.removeEventListener('click', activateEight, true)
-// }
-
-
-
-// function activate(arr, event) {
-//     let random = Math.floor(Math.random() * arr[0].length)
-//     let data = arr[0][random]
-//     current = data
-//     question.innerText = data.question
-//     currEl = event.target
-//     // console.log(random)
-// }
-// activate(eightHundred)
-// console.log(current)
 
 submitBtn.addEventListener('click', function(event){
     event.preventDefault()
@@ -128,14 +102,10 @@ submitBtn.addEventListener('click', function(event){
     } if (answer === input) {
         score += Number(newScore)
         scoreEl.innerText = score
-        console.log('money added');
+        // console.log('money added');
     } 
-    // else if (answer.toLowerCase !== answerInput.value.toLowerCase) {
-    //     alert('WRONG ANSWER! NO MONEY!')
-    // }
-    console.log(answerInput.value);
+    // console.log(answerInput.value);
     answerInput.value = ''
 })
 
 
-// console.log(question.innerText)
