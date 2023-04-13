@@ -37,8 +37,17 @@ body {
     color: #46F2B6;
 }
 
+#input-box {
+    width: 350px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
 #submit-btn {
     background: #46F2B6;
     border: none;
-    height: 20px;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
 }
